@@ -3,11 +3,11 @@ A teen-friendly progress tracker for building motivation through tiny wins - par
 
 # Tiny Wins Calculator 🦊✨
 
-[![Live Demo](https://img.shields.io/badge/Demo-Try%20Now!-brightgreen)](https://yourusername.github.io/tiny-wins-calculator/)
+[![Live Demo](https://img.shields.io/badge/Demo-Try%20Now!-brightgreen)](https://teenproductivityproject.github.io/tiny-wins-calculator/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 A teen-friendly progress tracker that helps build motivation through micro-achievements. 
-Part of the [Teen Productivity Project](https://yourblogurl.com) blog.
+Part of the [Teen Productivity Project](https://teenproductivityproject.wordpress.com/blog-posts) blog.
 
 ![Calculator Screenshot](images/screenshot.png) *(Optional - add screenshot later)*
 
@@ -19,10 +19,10 @@ Part of the [Teen Productivity Project](https://yourblogurl.com) blog.
 - 🔒 Data saved locally (your privacy matters)
 
 ## Usage 💻
-1. Visit the [live calculator](https://yourusername.github.io/tiny-wins-calculator/)
+1. Visit the [live calculator](https://teenproductivityproject.github.io/tiny-wins-calculator/)
 2. Add your tiny wins (e.g., "Reviewed math notes - 15 mins")
 3. Watch your progress grow!
 
 ## Installation (For Developers) ⚙️
 ```bash
-git clone https://github.com/yourusername/tiny-wins-calculator.git
+git clone https://github.com/teenproductivityproject/tiny-wins-calculator.git
