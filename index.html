@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Wins Calculator - Teen Productivity Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🦊 Tiny Wins Calculator</h1>
+        <p class="subtitle">Track your micro-progress, see big results!</p>
+
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="What tiny win did you achieve?">
+            <input type="number" id="timeInput" placeholder="Minutes spent">
+            <button onclick="addEntry()">Add Win! 🎉</button>
+        </div>
+
+        <div class="stats">
+            <div class="stat-box">
+                <h3>Total Wins</h3>
+                <p id="totalWins">0</p>
+            </div>
+            <div class="stat-box">
+                <h3>Total Time</h3>
+                <p id="totalTime">0 mins</p>
+            </div>
+            <div class="stat-box">
+                <h3>Average Win</h3>
+                <p id="averageTime">0 mins</p>
+            </div>
+        </div>
+
+        <div class="progress-container">
+            <h3>Weekly Progress</h3>
+            <div class="progress-bar">
+                <div id="progressFill" style="width: 0%"></div>
+            </div>
+            <p id="progressText">0% of weekly goal</p>
+        </div>
+
+        <div class="motivational-message" id="motivationText">
+            Start adding wins to unlock your first achievement! 🚀
+        </div>
+
+        <footer>
+            <p>🔒 Data is saved in your browser | 
+            <a href="https://teenproductivityproject.wordpress.com/2025/05/28/spark-your-drive-science-backed-ways-to-stay-motivated-as-a-teen/">Back to Blog</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
