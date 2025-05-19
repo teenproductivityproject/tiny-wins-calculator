@@ -1,0 +1,110 @@
+:root {
+    --primary-color: #FF6B6B;  /* TempoMentum brand color */
+    --secondary-color: #4ECDC4;
+    --background: #F7FFF7;
+}
+
+body {
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    background: var(--background);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+input, button {
+    padding: 12px;
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+button {
+    background: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.stat-box {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.progress-container {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 25px;
+    background: #eee;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#progressFill {
+    height: 100%;
+    background: var(--secondary-color);
+    transition: width 0.5s ease;
+}
+
+.motivational-message {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 25px 0;
+    padding: 15px;
+    border-radius: 15px;
+    background: #FFF9EC;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+}
+
+@media (max-width: 480px) {
+    .input-section {
+        flex-direction: column;
+    }
+}
