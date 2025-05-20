@@ -53,6 +53,48 @@ function addEntry() {
     }
 }
 
+// Add to script.js
+const ACHIEVEMENTS = [
+    { id: 'first-win', condition: (wins) => wins.length >= 1, message: "🚀 First Step!" },
+    { id: 'weekly-champ', condition: (wins) => wins.length >= WEEKLY_GOAL, message: "🏆 Weekly Goal Crushed!" },
+    { id: 'streak-3', condition: (wins) => checkStreak(wins) >= 3, message: "🔥 3-Day Streak!" },
+    { id: 'marathon', condition: (wins) => wins.length >= 50, message: "🦾 50 Wins Club!" }
+];
+
+function checkStreak(wins) {
+    // Implement streak logic
+}
+
+function updateAchievements() {
+    const unlocked = ACHIEVEMENTS.filter(a => !localStorage.getItem(a.id) && a.condition(wins));
+    unlocked.forEach(a => {
+        localStorage.setItem(a.id, 'unlocked');
+        alert(`Achievement Unlocked: ${a.message}`);
+    });
+}
+// Call updateAchievements() after addEntry()
+
+// Modify progressText
+const milestones = {
+    25: "🌟 Bronze Level!",
+    50: "💎 Silver Tier!",
+    100: "🏅 Gold Master!"
+};
+
+document.getElementById('progressText').innerHTML = `
+    ${Math.round(progress)}% of weekly goal 
+    ${milestones[totalWins] || ''}
+`;
+
+// Add to motivational messages
+const hour = new Date().getHours();
+const timeMessages = {
+    morning: "🌞 Start strong!",
+    afternoon: "☀️ Keep momentum!", 
+    evening: "🌙 Finish strong!"
+};
+// Use hour to pick relevant message
+
 // Initial load
 updateStats();
 
