@@ -95,6 +95,15 @@ const timeMessages = {
 };
 // Use hour to pick relevant message
 
+// Add on achievement unlock
+function triggerConfetti() {
+    // Simple CSS animation
+    const confetti = document.createElement('div');
+    confetti.className = 'confetti';
+    document.body.appendChild(confetti);
+    setTimeout(() => confetti.remove(), 2000);
+}
+
 // Initial load
 updateStats();
 
