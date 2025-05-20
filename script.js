@@ -108,8 +108,8 @@ function triggerConfetti() {
 updateStats();
 
 // Optional: Add reset functionality
-// document.getElementById('resetBtn').addEventListener('click', () => {
-//     wins = [];
-//     updateStorage();
-//     updateStats();
-// });
+ document.getElementById('resetBtn').addEventListener('click', () => {
+     wins = [];
+     updateStorage();
+     updateStats();
+ });
